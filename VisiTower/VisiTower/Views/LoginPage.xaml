@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VisiTower.Views.LoginPage" Title="Login"
+             NavigationPage.HasNavigationBar="False">
+   
+    <ContentPage.Content>
+        
+        <StackLayout
+            
+            BackgroundColor="White"
+            Spacing="20">
+
+            <Image
+                Source="VisiTower.png"
+                Margin="0,45,0,0"
+                HeightRequest="20"
+                >
+
+            </Image>
+            <StackLayout Padding="105, 60, 100, 20">
+            <Image Source="Foto_Perfil.png" HeightRequest="160" ></Image>
+            </StackLayout>
+            
+            
+            <Entry x:Name="Email" 
+                   Placeholder="Email" 
+                   TextColor="Black" 
+                   HorizontalOptions="CenterAndExpand" 
+                   WidthRequest=" 315">
+                
+            </Entry>
+            
+            <Entry x:Name="Senha" 
+                   Placeholder="Senha" 
+                   TextColor="Black" 
+                   HorizontalOptions="CenterAndExpand" 
+                   WidthRequest=" 320">
+                
+            </Entry>
+            
+            <Button Text="Não possui uma conta? Cadastre-se" 
+                    TextColor="DarkBlue"
+                    Margin="0,-15,0,0"
+                    BackgroundColor="White" 
+                    Clicked="ButtonCadastar_Clicked">
+                
+            </Button>
+            
+            <Button Text="Entrar"  
+                    TextColor="Black"  
+                    BackgroundColor="White" 
+                    BorderWidth="4" 
+                    BorderColor="Black"
+                    CornerRadius="10"
+                    Margin="0,35,0,0"
+                    
+                    HorizontalOptions="Center"
+                    WidthRequest="110"
+                        
+                    Clicked="ButtonEntrar_Clicked">
+                
+            </Button>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

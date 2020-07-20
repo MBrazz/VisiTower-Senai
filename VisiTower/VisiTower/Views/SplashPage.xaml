@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VisiTower.Views.SplashPage"
+             NavigationPage.HasNavigationBar="False">
+               
+    <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="#ACD7FF">
+            <StackLayout
+                VerticalOptions="CenterAndExpand"
+                Margin="0,70,0,0"
+               >
+                <Image
+                Source="VisiTower.png"
+                WidthRequest = "300"
+                HeightRequest="140"
+                Margin="0,0,0,0"
+   
+                
+                HorizontalOptions="CenterAndExpand"
+                />
+
+                <Label Text="Visite seu clube europeu do coração"
+               
+                   FontFamily="Lobster"
+                    HorizontalOptions="Center" 
+                FontSize="22"
+                TextColor="#3A3A3A"
+                   
+                   
+                   />
+
+            </StackLayout>
+
+            <Image
+                Source="Estadio.jpg"
+                HeightRequest="350"
+                WidthRequest="100"
+                Margin="15,45,0,0"
+            />
+
+            <StackLayout
+                Orientation="Vertical"
+                VerticalOptions="EndAndExpand"
+                
+                >
+                <StackLayout
+                Orientation="Horizontal"
+                    >
+                    <Label Text="Colaboradores"
+                HorizontalOptions="CenterAndExpand"
+                FontSize="19"
+                TextColor="Black"
+                
+               
+                   />
+                </StackLayout>
+
+
+                <StackLayout
+               
+                Orientation="Horizontal">
+
+
+                    <Image
+                Source="fifa_logo.png"
+                WidthRequest = "120"
+                HeightRequest="80"
+                HorizontalOptions="CenterAndExpand"
+                        
+                
+                />
+
+                    <Image
+                Source="WS_Towers.png"
+                WidthRequest = "150"
+                HeightRequest="80"
+                HorizontalOptions="CenterAndExpand"
+                
+                />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisiTower.Android", "VisiTower\VisiTower.Android\VisiTower.Android.csproj", "{ADDFF3D3-BE54-45C2-AA15-0A5C10CCC753}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisiTower", "VisiTower\VisiTower\VisiTower.csproj", "{5690F68D-96D5-4DE9-88C3-D35EA24EE348}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADDFF3D3-BE54-45C2-AA15-0A5C10CCC753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADDFF3D3-BE54-45C2-AA15-0A5C10CCC753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADDFF3D3-BE54-45C2-AA15-0A5C10CCC753}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{ADDFF3D3-BE54-45C2-AA15-0A5C10CCC753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADDFF3D3-BE54-45C2-AA15-0A5C10CCC753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADDFF3D3-BE54-45C2-AA15-0A5C10CCC753}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5690F68D-96D5-4DE9-88C3-D35EA24EE348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5690F68D-96D5-4DE9-88C3-D35EA24EE348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5690F68D-96D5-4DE9-88C3-D35EA24EE348}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5690F68D-96D5-4DE9-88C3-D35EA24EE348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5690F68D-96D5-4DE9-88C3-D35EA24EE348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5690F68D-96D5-4DE9-88C3-D35EA24EE348}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D31A82D-DEA6-4733-A111-107817AB56EE}
+	EndGlobalSection
+EndGlobal

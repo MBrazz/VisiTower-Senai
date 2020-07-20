@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VisiTower.Views.CadastroPage">
+    <ContentPage.Content>
+        <StackLayout 
+            BackgroundColor="White">
+
+            <Image
+                Source="VisiTower.png"
+                Margin="0,45,0,0"
+                HeightRequest="20"
+                >
+
+            </Image>
+
+            <StackLayout
+                Margin="0,60,0,0"
+                >
+                <Image
+                    Source="Foto_Perfil.png"
+                    HeightRequest="160"
+                    VerticalOptions="CenterAndExpand"
+                    
+                    />
+            </StackLayout>
+
+            <StackLayout
+                VerticalOptions="Center" HorizontalOptions="Center"  Orientation="Horizontal">
+
+                <Entry Placeholder="Nome" 
+                   TextColor="Black"
+                   Margin="0,30,0,0"
+                   WidthRequest="320"
+                         />
+            </StackLayout>
+
+            <StackLayout
+                VerticalOptions="Center" HorizontalOptions="Center"  Orientation="Horizontal">
+
+
+                <Entry Placeholder="Telefone" 
+                      TextColor="Black"
+                   Margin="0,15,0,0"
+                   WidthRequest="320"
+                       />
+
+            </StackLayout>
+            <StackLayout
+                VerticalOptions="Center" HorizontalOptions="Center"  Orientation="Horizontal"
+                
+                >
+
+
+                <Entry Placeholder="Email"
+                        TextColor="Black"
+                   Margin="0,15,0,0"
+                   WidthRequest="320"
+                         />
+
+            </StackLayout>
+            <StackLayout
+                VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+
+
+                <Entry Placeholder="Senha" IsPassword="True" 
+                     TextColor="Black"
+                   Margin="0,15,0,0"
+                   WidthRequest="320"
+                   ClearButtonVisibility="WhileEditing"
+                       />
+
+            </StackLayout>
+
+            <Button Text="Cadastrar" 
+                    BorderColor="#000000" 
+                    TextColor="Black"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="Center"
+                         WidthRequest="140"
+                         HeightRequest="48" 
+                         CornerRadius="10"
+                        BorderWidth="4"
+                    BackgroundColor="White"
+                    
+                        />
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
