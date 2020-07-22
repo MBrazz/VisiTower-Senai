@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VisiTower.Views.AboutPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image
+                Source="VisiTower.png"
+                Margin="0,30,0,30"
+                HeightRequest="20"
+                >
+            </Image>
+
+            <StackLayout Margin="0,0,0,35">
+                <Label Text="Sobre" 
+                       FontFamily="Comfortaa-Bold.ttf#Comfortaa-Bold"
+                       FontSize="21"
+                       TextColor="Black"
+                
+                     HorizontalOptions="CenterAndExpand" />
+
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Este aplicativo tem como principal objetivo fazer você conhecer seu clube europeu favorito, e bla blaa blaa blala blblaaa lblaa, blallal e blala, blblblaa ballala balalala bllaalal blaa blaaa blalaa, blalala blaa blaa e lalal bllala llala blala, blalla e mais blallaa bllala alala ballaa e por este motivo este aplicativo foi criado."
+                       FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="CenterAndExpand"
+                       WidthRequest="357"
+                       >
+
+                </Label>
+            </StackLayout>
+
+            <StackLayout Margin="0,50,0,0">
+                <Label Text="Créditos" 
+                       FontFamily="Comfortaa-Bold.ttf#Comfortaa-Bold"
+                       FontSize="21"
+                       TextColor="Black"
+                
+                     HorizontalOptions="CenterAndExpand" />
+
+
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Mateus Braz Diego Barreto Marcos Roberto Felipe Sugisawa"
+                       FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
+                       FontSize="18"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       Margin="45,0,0,0"
+                       WidthRequest="147"
+                       >
+
+                </Label>
+            
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

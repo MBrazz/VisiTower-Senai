@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mateu\\Documents\\VisiTower\\VisiTower\\VisiTower.Android\\VisiTower.Android.csproj": {}
+    "C:\\Users\\mateu\\Documents\\VisiTower-Senai\\VisiTower\\VisiTower.Android\\VisiTower.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mateu\\Documents\\VisiTower\\VisiTower\\VisiTower.Android\\VisiTower.Android.csproj": {
+    "C:\\Users\\mateu\\Documents\\VisiTower-Senai\\VisiTower\\VisiTower.Android\\VisiTower.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mateu\\Documents\\VisiTower\\VisiTower\\VisiTower.Android\\VisiTower.Android.csproj",
+        "projectUniqueName": "C:\\Users\\mateu\\Documents\\VisiTower-Senai\\VisiTower\\VisiTower.Android\\VisiTower.Android.csproj",
         "projectName": "VisiTower.Android",
-        "projectPath": "C:\\Users\\mateu\\Documents\\VisiTower\\VisiTower\\VisiTower.Android\\VisiTower.Android.csproj",
+        "projectPath": "C:\\Users\\mateu\\Documents\\VisiTower-Senai\\VisiTower\\VisiTower.Android\\VisiTower.Android.csproj",
         "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mateu\\Documents\\VisiTower\\VisiTower\\VisiTower.Android\\obj\\",
+        "outputPath": "C:\\Users\\mateu\\Documents\\VisiTower-Senai\\VisiTower\\VisiTower.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\mateu\\Documents\\VisiTower\\VisiTower\\VisiTower\\VisiTower.csproj": {
-                "projectPath": "C:\\Users\\mateu\\Documents\\VisiTower\\VisiTower\\VisiTower\\VisiTower.csproj"
+              "C:\\Users\\mateu\\Documents\\VisiTower-Senai\\VisiTower\\VisiTower\\VisiTower.csproj": {
+                "projectPath": "C:\\Users\\mateu\\Documents\\VisiTower-Senai\\VisiTower\\VisiTower\\VisiTower.csproj"
               }
             }
           }
@@ -49,19 +49,23 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.5.0.495, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
             }
           }
         }
       }
     },
-    "C:\\Users\\mateu\\Documents\\VisiTower\\VisiTower\\VisiTower\\VisiTower.csproj": {
+    "C:\\Users\\mateu\\Documents\\VisiTower-Senai\\VisiTower\\VisiTower\\VisiTower.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mateu\\Documents\\VisiTower\\VisiTower\\VisiTower\\VisiTower.csproj",
+        "projectUniqueName": "C:\\Users\\mateu\\Documents\\VisiTower-Senai\\VisiTower\\VisiTower\\VisiTower.csproj",
         "projectName": "VisiTower",
-        "projectPath": "C:\\Users\\mateu\\Documents\\VisiTower\\VisiTower\\VisiTower\\VisiTower.csproj",
+        "projectPath": "C:\\Users\\mateu\\Documents\\VisiTower-Senai\\VisiTower\\VisiTower\\VisiTower.csproj",
         "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mateu\\Documents\\VisiTower\\VisiTower\\VisiTower\\obj\\",
+        "outputPath": "C:\\Users\\mateu\\Documents\\VisiTower-Senai\\VisiTower\\VisiTower\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -106,6 +110,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.5.0.495, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
             }
           },
           "imports": [

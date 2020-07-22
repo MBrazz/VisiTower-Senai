@@ -26,9 +26,9 @@
 
                 <Label Text="Visite seu clube europeu do coração"
                
-                   FontFamily="Lobster"
-                    HorizontalOptions="Center" 
-                FontSize="22"
+                   FontFamily="Comfortaa-SemiBold.ttf#Comfortaa-SemiBold"
+                    HorizontalOptions="CenterAndExpand" 
+                FontSize="19"
                 TextColor="#3A3A3A"
                    
                    
@@ -52,9 +52,10 @@
                 Orientation="Horizontal"
                     >
                     <Label Text="Colaboradores"
-                HorizontalOptions="CenterAndExpand"
-                FontSize="19"
-                TextColor="Black"
+                           FontFamily="Comfortaa-Bold.ttf#Comfortaa-Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           FontSize="19"
+                           TextColor="Black"
                 
                
                    />

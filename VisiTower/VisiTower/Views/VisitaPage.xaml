@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VisiTower.Views.VisitaPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Image
+                Source="VisiTower.png"
+                Margin="0,30,0,50"
+                HeightRequest="20"
+                
+                >
+
+            </Image>
+            
+            <StackLayout>
+                <Image x:Name="ImagemTime" HeightRequest="120" WidthRequest="120"></Image>
+
+                
+                
+                <StackLayout BackgroundColor="White">
+                    <ListView x:Name="ListaDatas"  RowHeight="180" SeparatorVisibility="None">
+                        <ListView.ItemTemplate >
+                            <DataTemplate >
+                                
+                                <TextCell
+                                    
+                                    Text="{Binding DataVisita}" Detail="{Binding PrecoVisita}"
+                                          TextColor="Black" DetailColor="Black"
+                                    
+                                           
+                                           >
+                                    
+                                </TextCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+                <StackLayout Padding="0, 0 , 15 , 160 ">
+                    <Button Text="Concluir"  
+                            BorderColor="#000000"
+                            FontFamily="Montserrat-SemiBold.ttf#Montserrat-SemiBold"
+                    TextColor="Black"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="Center"
+                         WidthRequest="140"
+                         HeightRequest="48" 
+                         CornerRadius="10"
+                        BorderWidth="4"
+                    BackgroundColor="White">
+
+                    </Button>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

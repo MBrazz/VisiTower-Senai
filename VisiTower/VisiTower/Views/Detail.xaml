@@ -8,43 +8,43 @@
              Title="Menu"
              BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout >
+        <StackLayout BackgroundColor="White" >
             <Image
                 Source="VisiTower.png"
-                Margin="0,30,0,45"
+                Margin="0,30,0,30"
                 HeightRequest="20"
                 >
 
             </Image>
+
+            <StackLayout Margin="0,0,0,35">
+                <Label Text="Escolha seu time e agende uma visita" 
+                       FontFamily="Comfortaa-Bold.ttf#Comfortaa-Bold"
+                       FontSize="19"
+                       TextColor="Black"
+                
+                     HorizontalOptions="CenterAndExpand" />
+
+            </StackLayout>
+
+
+
             
-            <StackLayout >
-                <ListView x:Name="ListaTimes">
+                <ListView x:Name="ListaTimes" ItemTapped="ListaTimes_ItemTapped" RowHeight="100">
                     <ListView.ItemTemplate >
-                        <DataTemplate>
-                            <ImageCell Text="{Binding Nome}" 
+                        <DataTemplate >
+                            <ImageCell Text="{Binding Nome}"                               
                                        Detail="{Binding Estadio}"
                                        ImageSource="{Binding ImagemUrl}"
                                        TextColor="Black"
                                        DetailColor="Gray"
+
+                                      
                                        ></ImageCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <StackLayout Padding="0, 0 , 15 , 120 ">
-                    <Button Text="Continuar"  
-                            BorderColor="#000000" 
-                    TextColor="Black"
-                    VerticalOptions="CenterAndExpand" 
-                    HorizontalOptions="Center"
-                         WidthRequest="140"
-                         HeightRequest="48" 
-                         CornerRadius="10"
-                        BorderWidth="4"
-                    BackgroundColor="White">
-
-                    </Button>
-                </StackLayout>
-            </StackLayout>
+                
             
         </StackLayout>
         

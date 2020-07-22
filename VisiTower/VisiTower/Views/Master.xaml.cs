@@ -21,5 +21,10 @@ namespace VisiTower.Views
         {
             Navigation.PushAsync(new LoginPage());
         }
+
+        private void ButtonAbout_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AboutPage());
+        }
     }
 }

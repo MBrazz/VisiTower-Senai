@@ -31,10 +31,13 @@
             <StackLayout
                 VerticalOptions="Center" HorizontalOptions="Center"  Orientation="Horizontal">
 
-                <Entry Placeholder="Nome" 
-                   TextColor="Black"
-                   Margin="0,30,0,0"
-                   WidthRequest="320"
+                <Entry x:Name="Nome" 
+                       Placeholder="Nome"
+                       FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
+                       FontSize="17"
+                       TextColor="Black"
+                       Margin="0,30,0,0"
+                       WidthRequest="320"
                          />
             </StackLayout>
 
@@ -42,10 +45,13 @@
                 VerticalOptions="Center" HorizontalOptions="Center"  Orientation="Horizontal">
 
 
-                <Entry Placeholder="Telefone" 
-                      TextColor="Black"
-                   Margin="0,15,0,0"
-                   WidthRequest="320"
+                <Entry x:Name="Telefone"
+                       Placeholder="Telefone"
+                       FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
+                   FontSize="17"
+                       TextColor="Black"
+                       Margin="0,15,0,0"
+                       WidthRequest="320"
                        />
 
             </StackLayout>
@@ -55,10 +61,13 @@
                 >
 
 
-                <Entry Placeholder="Email"
-                        TextColor="Black"
-                   Margin="0,15,0,0"
-                   WidthRequest="320"
+                <Entry x:Name="Email"
+                       Placeholder="Email"
+                       FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
+                   FontSize="17"
+                       TextColor="Black"
+                       Margin="0,15,0,0"
+                       WidthRequest="320"
                          />
 
             </StackLayout>
@@ -66,11 +75,15 @@
                 VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
 
 
-                <Entry Placeholder="Senha" IsPassword="True" 
-                     TextColor="Black"
-                   Margin="0,15,0,0"
-                   WidthRequest="320"
-                   ClearButtonVisibility="WhileEditing"
+                <Entry x:Name="Senha"
+                       Placeholder="Senha" 
+                       FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
+                   FontSize="17"
+                       IsPassword="True" 
+                       TextColor="Black"
+                       Margin="0,15,0,0"
+                       WidthRequest="320"
+                       ClearButtonVisibility="WhileEditing"
                        />
 
             </StackLayout>
@@ -78,6 +91,7 @@
             <Button Text="Cadastrar" 
                     BorderColor="#000000" 
                     TextColor="Black"
+                    FontFamily="Montserrat-SemiBold.ttf#Montserrat-SemiBold"
                     VerticalOptions="CenterAndExpand" 
                     HorizontalOptions="Center"
                          WidthRequest="140"
@@ -85,6 +99,7 @@
                          CornerRadius="10"
                         BorderWidth="4"
                     BackgroundColor="White"
+                    Clicked="ButtonCadastrar_Clicked"
                     
                         />
 

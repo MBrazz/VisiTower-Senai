@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using SQLite;
+using VisiTower.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
+
 
 namespace VisiTower.Views
 {
@@ -19,10 +23,33 @@ namespace VisiTower.Views
 
         private void ButtonEntrar_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new PaginaPrincipal());
+            var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "DatabaseTower.db");
+            var db = new SQLiteConnection(dbpath);
+            var myquery = db.Table<Cadastrar>().Where(u => u.usuario.Equals(Email.Text)
+            && u.senha.Equals(Senha.Text)).FirstOrDefault();
+
+            if (myquery != null)
+            {
+                Navigation.PushAsync(new PaginaPrincipal());
+            }
+            else
+            {
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    var result = await this.DisplayAlert("Ops!", "Usuário ou Senha incorreta(os)", "OK", "Cancelar");
+                    if (result)
+                        await Navigation.PushAsync(new LoginPage());
+                    else
+                    {
+                        await Navigation.PushAsync(new LoginPage());
+                    }
+                });
+            }
+
+            //Navigation.PushAsync(new PaginaPrincipal());
         }
 
-        private void ButtonCadastar_Clicked(object sender, EventArgs e)
+        private void ButtonCadastrar_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new CadastroPage());
         }

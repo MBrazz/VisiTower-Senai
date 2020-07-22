@@ -7,12 +7,4 @@
              mc:Ignorable="d"
              x:Class="VisiTower.Views.PaginaPrincipal"
              NavigationPage.HasNavigationBar="False">
-    
-        <!--<StackLayout Spacing="20">
-            <Label Text="VisiTower" TextColor="Black" FontSize="30"
-                
-                HorizontalOptions="CenterAndExpand" />
-            
-        </StackLayout>-->
-    
 </MasterDetailPage>

@@ -28,7 +28,9 @@
             
             <Entry x:Name="Email" 
                    Placeholder="Email" 
-                   TextColor="Black" 
+                    FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
+                   FontSize="17"
+                   TextColor="Black"
                    HorizontalOptions="CenterAndExpand" 
                    WidthRequest=" 315">
                 
@@ -36,17 +38,21 @@
             
             <Entry x:Name="Senha" 
                    Placeholder="Senha" 
-                   TextColor="Black" 
+                   FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
+                   FontSize="17"
+                   TextColor="Black"
                    HorizontalOptions="CenterAndExpand" 
                    WidthRequest=" 320">
                 
             </Entry>
             
-            <Button Text="Não possui uma conta? Cadastre-se" 
+            <Button Text="Não possui uma conta? Cadastre-se"
+                    FontFamily="Montserrat-SemiBold.ttf#Montserrat-SemiBold"
+                    FontSize="13.5"
                     TextColor="DarkBlue"
                     Margin="0,-15,0,0"
                     BackgroundColor="White" 
-                    Clicked="ButtonCadastar_Clicked">
+                    Clicked="ButtonCadastrar_Clicked">
                 
             </Button>
             
@@ -57,7 +63,7 @@
                     BorderColor="Black"
                     CornerRadius="10"
                     Margin="0,35,0,0"
-                    
+                    FontFamily="Montserrat-SemiBold.ttf#Montserrat-SemiBold"
                     HorizontalOptions="Center"
                     WidthRequest="110"
                         
