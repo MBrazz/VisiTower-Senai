@@ -36,7 +36,7 @@
                        FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
                        FontSize="17"
                        TextColor="Black"
-                       Margin="0,30,0,0"
+                       Margin="0,5,0,0"
                        WidthRequest="320"
                          />
             </StackLayout>
@@ -47,6 +47,7 @@
 
                 <Entry x:Name="Telefone"
                        Placeholder="Telefone"
+                       Keyboard="Telephone"
                        FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
                    FontSize="17"
                        TextColor="Black"
@@ -63,6 +64,7 @@
 
                 <Entry x:Name="Email"
                        Placeholder="Email"
+                       Keyboard="Email"
                        FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
                    FontSize="17"
                        TextColor="Black"
@@ -77,8 +79,9 @@
 
                 <Entry x:Name="Senha"
                        Placeholder="Senha" 
+                       Keyboard="Numeric"
                        FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
-                   FontSize="17"
+                       FontSize="17"
                        IsPassword="True" 
                        TextColor="Black"
                        Margin="0,15,0,0"
@@ -92,13 +95,14 @@
                     BorderColor="#000000" 
                     TextColor="Black"
                     FontFamily="Montserrat-SemiBold.ttf#Montserrat-SemiBold"
-                    VerticalOptions="CenterAndExpand" 
+                    VerticalOptions="Start" 
                     HorizontalOptions="Center"
-                         WidthRequest="140"
-                         HeightRequest="48" 
-                         CornerRadius="10"
-                        BorderWidth="4"
+                    WidthRequest="140"
+                    HeightRequest="48" 
+                    CornerRadius="10"
+                    BorderWidth="4"
                     BackgroundColor="White"
+                    Margin="0,30,0,0"
                     Clicked="ButtonCadastrar_Clicked"
                     
                         />

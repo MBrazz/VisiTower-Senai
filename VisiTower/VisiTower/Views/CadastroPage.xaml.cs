@@ -37,7 +37,7 @@ namespace VisiTower.Views
             db.Insert(item);
             Device.BeginInvokeOnMainThread(async () =>
             {
-                var result = await this.DisplayAlert("Concluído", "Usuário cadastrado com sucesso", "OK", "Cancelar");
+                var result = await this.DisplayAlert("Concluído", "Usuário cadastrado com sucesso", "OK", "");
                 if (result)
                     await Navigation.PushAsync(new LoginPage());
             });

@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="VisiTower.Views.VisitaPage">
+    
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <Image
@@ -15,46 +16,109 @@
                 >
 
             </Image>
-            
-            <StackLayout>
-                <Image x:Name="ImagemTime" HeightRequest="120" WidthRequest="120"></Image>
-
+            <Image x:Name="ImagemTime" HeightRequest="120" WidthRequest="120"></Image>
+            <ListView
+                x:Name="ListaDatas"
+                HasUnevenRows="True"
+                SeparatorVisibility="None"
+                InputTransparent="True"
                 
-                
-                <StackLayout BackgroundColor="White">
-                    <ListView x:Name="ListaDatas"  RowHeight="180" SeparatorVisibility="None">
-                        <ListView.ItemTemplate >
-                            <DataTemplate >
+               
+                >
+                <ListView.ItemTemplate >
+                    <DataTemplate >
+                        <ViewCell >
+                            <StackLayout 
+                                Padding="15,60,0,0"
                                 
-                                <TextCell
+                                >
+
+                                <StackLayout Orientation="Vertical"
+                                             Spacing="15"
+                                             >
                                     
-                                    Text="{Binding DataVisita}" Detail="{Binding PrecoVisita}"
-                                          TextColor="Black" DetailColor="Black"
+                                    <Label 
+                                        Text="{Binding Estadio}" 
+                                        FontFamily="Montserrat-SemiBold.ttf#Montserrat-SemiBold"
+                                        HorizontalOptions="Start"
+                                        FontSize="18"
+                                        TextColor="Black"
+                                        
+                                        />
+
+
+                                    <!--<Label 
+                                       
+                                        Text="{Binding DataVisita}"  
+                                        
+                                        FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
+                                        HorizontalOptions="Start"
+                                        FontSize="16"  
+                                        TextColor="Black"
+                        />-->
+
                                     
-                                           
-                                           >
-                                    
-                                </TextCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </StackLayout>
-                <StackLayout Padding="0, 0 , 15 , 160 ">
+
+                                    <Label 
+                                        Text="{Binding Local}"  
+                                        FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
+                                        HorizontalOptions="Start"
+                                        FontSize="16"  
+                                        TextColor="Black"
+                                        
+                        />
+                                    <Label 
+                                        Text="{Binding PrecoVisita}"  
+                                        FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
+                                        HorizontalOptions="Start"
+                                        FontSize="16"   
+                                        TextColor="Black"
+                        />
+                                    <Label 
+                                        Text="Selecione o dia da sua visita:"
+                                        Margin="0,15,0,0"
+                                        FontFamily="Montserrat-SemiBold.ttf#Montserrat-SemiBold"
+                                        HorizontalOptions="Start"
+                                        FontSize="16"   
+                                        TextColor="Black"
+                        />
+                                </StackLayout>
+
+                            </StackLayout>
+                        </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+            
+            <DatePicker
+                Format="dd/MM/yyyy"
+                FontSize="16"
+                TextColor="Black"
+                FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
+                Margin="12,0,12,20"
+                HeightRequest="37"
+                />
+
+
+        <StackLayout Padding="0, 0 , 15 , 160 ">
                     <Button Text="Concluir"  
                             BorderColor="#000000"
                             FontFamily="Montserrat-SemiBold.ttf#Montserrat-SemiBold"
-                    TextColor="Black"
-                    VerticalOptions="CenterAndExpand" 
-                    HorizontalOptions="Center"
-                         WidthRequest="140"
-                         HeightRequest="48" 
-                         CornerRadius="10"
-                        BorderWidth="4"
-                    BackgroundColor="White">
+                            TextColor="Black"
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Center"
+                            WidthRequest="140"
+                            HeightRequest="48" 
+                            CornerRadius="10"
+                            BorderWidth="4"
+                            BackgroundColor="White"
+                            Clicked="ButtonConcluir_Clicked">
 
                     </Button>
-                </StackLayout>
-            </StackLayout>
+            
+                 </StackLayout>        
         </StackLayout>
+            
+       
     </ContentPage.Content>
 </ContentPage>

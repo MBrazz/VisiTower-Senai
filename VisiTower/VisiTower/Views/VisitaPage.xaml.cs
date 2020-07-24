@@ -32,5 +32,20 @@ namespace VisiTower.Views
         {
 
         }
+        private void ButtonConcluir_Clicked(object sender, EventArgs e)
+        {
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                var result = await this.DisplayAlert("Notificação", "Agendamento realizado com sucesso!", "OK", "");
+                if (result)
+                    await Navigation.PushAsync(new Detail());
+            });
+            
+            
+        }
+
+     
+
+
     }
 }

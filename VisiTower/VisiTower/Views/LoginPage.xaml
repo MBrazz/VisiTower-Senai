@@ -27,7 +27,8 @@
             
             
             <Entry x:Name="Email" 
-                   Placeholder="Email" 
+                   Placeholder="Email"
+                   Keyboard="Email"
                     FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
                    FontSize="17"
                    TextColor="Black"
@@ -37,7 +38,9 @@
             </Entry>
             
             <Entry x:Name="Senha" 
-                   Placeholder="Senha" 
+                   Placeholder="Senha"
+                   Keyboard="Numeric"
+                   IsPassword="True"
                    FontFamily="Montserrat-Regular.ttf#Montserrat-Regular"
                    FontSize="17"
                    TextColor="Black"
